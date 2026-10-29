@@ -26,6 +26,7 @@ class PublicExportTests(unittest.TestCase):
         self.initialize(self.source)
         self.write('README.md', 'Synthetic public project\n')
         self.write('.gitignore', '*.lock\n')
+        self.write('.gitattributes', (ROOT / '.gitattributes').read_text())
         self.write('ecosystem.py', '# Synthetic entry point\n')
         self.write('knowledge_pipeline/.gitignore', '# Synthetic ignore rules\n')
         checker = self.source / 'knowledge_pipeline/scripts/check_repository.py'
@@ -83,6 +84,23 @@ class PublicExportTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'credential-like content'):
             exporter.export_public(self.source, self.destination)
         self.assertFalse(self.destination.exists())
+
+    def test_private_study_bytes_survive_git_even_with_windows_line_endings(self):
+        names=['ecosystem/data/studium/subjects/alpha/sources/notes.md',
+               'ecosystem/data/training/alpha/progress.json',
+               'knowledge_pipeline/data/justin_sung/synthesis/main.txt']
+        raw=b'Synthetic material\r\nSecond line\r\n'
+        for name in names:
+            path=self.source/name
+            path.parent.mkdir(parents=True,exist_ok=True)
+            path.write_bytes(raw)
+        self.commit(self.source)
+        clone=self.base/'second-device'
+        exporter.git(self.base,'-c','core.autocrlf=true','clone','--quiet','--no-hardlinks',
+                     str(self.source),str(clone))
+        for name in names:
+            self.assertEqual(exporter.git(self.source,'show','HEAD:'+name),raw)
+            self.assertEqual((clone/name).read_bytes(),raw)
 
     def test_update_stages_code_changes_and_preserves_ignored_local_data(self):
         exporter.export_public(self.source, self.destination)

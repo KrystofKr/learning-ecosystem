@@ -4,3 +4,7 @@
 *.json text eol=lf
 *.yml text eol=lf
 *.ps1 text eol=crlf
+
+# Study assets are verified by byte hashes; Git must not rewrite their newlines.
+ecosystem/data/** -text
+knowledge_pipeline/data/** -text

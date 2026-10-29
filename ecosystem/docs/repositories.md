@@ -18,6 +18,8 @@ klonem soukromého s následným smazáním souborů: ty by zůstaly v historii.
 | Prostředí, přihlášení, místní konfigurace, zámky a instalační záznamy | Ne | Ne |
 
 Starší metodické verze uchovávej: uložené lekce a pokusy na ně odkazují.
+Pravidla `.gitattributes` zachovávají bajty studijních dat včetně konců řádků,
+aby se při přenosu mezi Linuxem a Windows nezměnily ověřované otisky materiálů.
 Získané materiály a přepisy zůstávají v soukromé verzi. Vyexportované obrázky
 stránek v `ecosystem/data/renders/` lze znovu vytvořit a nepřenášejí se.
 
