@@ -1,0 +1,30 @@
+name: Tests
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: knowledge_pipeline
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: knowledge_pipeline/pyproject.toml
+      - run: python -m pip install -e . -e ../ecosystem
+      - run: python -B -m unittest discover -s tests -p 'test_*.py'
+      - run: python -B -m unittest discover -s ../tests -p 'test_*.py'
+      - name: Check repository contents against its GitHub visibility
+        run: python scripts/check_repository.py --root .. --profile ${{ github.event.repository.private && 'private' || 'public' }}

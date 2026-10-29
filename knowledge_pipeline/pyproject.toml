@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "learning-app"
+version = "0.1.0"
+description = "Local YouTube transcript collection and incremental study synthesis"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["requests==2.34.2", "yt-dlp==2026.10.21"]
+
+[project.scripts]
+learning-knowledge = "learning_app.knowledge_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"learning_app.knowledge_pipeline" = ["prompts/*.txt"]

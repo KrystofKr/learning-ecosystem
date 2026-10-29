@@ -1,0 +1,57 @@
+# Shared project files and self-contained components only.
+/*
+!/.gitignore
+!/.gitattributes
+!/.github/
+!/README.md
+!/AGENTS.md
+!/ecosystem.py
+!/ecosystem/
+!/skills/
+!/tests/
+!/knowledge_pipeline/
+!/LICENSE
+!/LICENSE.txt
+!/CONTRIBUTING.md
+!/SECURITY.md
+
+# Local compatibility links and environment-owned directories.
+/.venv
+/scripts
+/automation
+/.agents/
+/.codex/
+/.aws/
+/.knowledge_pipeline_relocation.lock
+
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+/ecosystem/reports/
+/ecosystem/.venv/
+/ecosystem/config/local.json
+
+# Only portable study records belong in the private repository.
+/ecosystem/data/*
+!/ecosystem/data/studium/
+!/ecosystem/data/training/
+!/ecosystem/data/methods/
+/ecosystem/data/renders/
+
+# Machine-specific files stay local in both repository variants.
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.lock
+*.log
+*.tmp
+access_state.json
+pending.json
+
+
+# Personal data stays outside the public source repository.
+/ecosystem/data/
+/knowledge_pipeline/data/

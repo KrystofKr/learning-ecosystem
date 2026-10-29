@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "learning-ecosystem"
+version = "0.1.0"
+description = "Source-grounded coaching skills and progressive study technique training"
+requires-python = ">=3.11"
+dependencies = ["pypdf==6.21.3", "pypdfium2==5.14.0", "Pillow==13.0.0"]
+
+[project.scripts]
+learning-ecosystem = "learning_ecosystem.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

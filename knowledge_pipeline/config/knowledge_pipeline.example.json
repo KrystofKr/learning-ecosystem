@@ -1,0 +1,7 @@
+{
+  "data_dir": "data",
+  "codex_binary": "codex",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "xhigh",
+  "timeout_seconds": 600
+}

@@ -1,0 +1,76 @@
+# Publish only the declared source tree, even if a new local data folder appears.
+/*
+!/.gitignore
+!/.gitattributes
+!/.github/
+!/src/
+!/tests/
+!/scripts/
+!/docs/
+!/config/
+!/README.md
+!/pyproject.toml
+!/MANIFEST.in
+!/LICENSE
+!/LICENSE.txt
+!/CONTRIBUTING.md
+!/SECURITY.md
+/config/*
+!/config/knowledge_pipeline.example.json
+
+# Portable source data belongs only in the private study repository.
+/data/*
+!/data/justin_sung/
+/data/justin_sung/*
+!/data/justin_sung/incoming/
+!/data/justin_sung/archive/
+!/data/justin_sung/synthesis/
+/reports/
+
+# Local configuration and captured channel inventory
+/config/local.json
+/config/knowledge_pipeline.local.json
+!/config/baseline.json
+
+# Local compatibility files for an already registered Windows task
+/automation/
+/youtube/
+/.local/
+
+# Environments and Python build artifacts
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+/build/
+/dist/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local credentials, editor settings and OS files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+/.agents/
+/.codex/
+/.aws/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Runtime leftovers, even if accidentally written outside data/
+*.log
+*.lock
+*.tmp
+access_state.json
+pending.json
+
+# Public source repository.
+/data/
+/config/baseline.json

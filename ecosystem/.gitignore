@@ -1,0 +1,11 @@
+/reports/
+/.venv/
+/config/local.json
+/build/
+/dist/
+*.egg-info/
+__pycache__/
+*.py[cod]
+
+# Public source repository.
+/data/

@@ -1,0 +1,382 @@
+{
+  "schema_version": 1,
+  "techniques": [
+    {
+      "id": "goals",
+      "title": "Cíl a měřítko výsledku",
+      "sections": [
+        "1",
+        "15"
+      ],
+      "prerequisites": [],
+      "purpose": "Určit požadovaný výkon a smysluplné ověření.",
+      "practice_task": "Převeď jeden svůj studijní cíl na konkrétní výkon, podmínky a způsob kontroly.",
+      "rubric": {
+        "criterion-1": "Výkon popisuje činnost uživatele, ne pouze přečtené stránky.",
+        "criterion-2": "Kritérium rozlišuje samostatnost, použití a případný odstup.",
+        "criterion-3": "Cíl odpovídá skutečnému účelu a dostupným podmínkám."
+      }
+    },
+    {
+      "id": "diagnosis",
+      "title": "Hlavní překážka učení",
+      "sections": [
+        "2",
+        "22"
+      ],
+      "prerequisites": [
+        "goals"
+      ],
+      "purpose": "Rozlišit možné příčiny konkrétního selhání.",
+      "practice_task": "Rozebírej jeden skutečný pokus, navrhni dvě možná vysvětlení a rozlišující další úlohu.",
+      "rubric": {
+        "criterion-1": "Hypotéza má oporu v konkrétním pokusu nebo uvedeném pozorování.",
+        "criterion-2": "Je pojmenované jiné možné vysvětlení.",
+        "criterion-3": "Další test může vysvětlení odlišit."
+      }
+    },
+    {
+      "id": "priming",
+      "title": "Priming před podrobným učením",
+      "sections": [
+        "4"
+      ],
+      "prerequisites": [
+        "goals"
+      ],
+      "purpose": "Vytvořit pracovní strukturu a otázky před detaily.",
+      "practice_task": "Před podrobným čtením vybrané části načrtni hlavní pojmy, předběžné vztahy a otázky; potom jednu hypotézu ověř.",
+      "rubric": {
+        "criterion-1": "Rozsah a hlavní prvky jsou vybrané před detailním výkladem.",
+        "criterion-2": "Vztahy jsou vlastní, významové a výslovně předběžné.",
+        "criterion-3": "Otázky vedou další práci a po čtení je zaznamenaná oprava."
+      }
+    },
+    {
+      "id": "layering",
+      "title": "Vrstvení a více průchodů",
+      "sections": [
+        "3",
+        "5"
+      ],
+      "prerequisites": [
+        "priming"
+      ],
+      "purpose": "Budovat propojený celek před zahlcením detaily.",
+      "practice_task": "Rozděl vybrané téma na logiku celku, koncepty a detaily; proveď jeden tenký průchod a urč další návrat.",
+      "rubric": {
+        "criterion-1": "První vrstva vystihuje smysl a hlavní návaznosti celku.",
+        "criterion-2": "Detaily jsou přiřazené ke konceptům, ne pouze vypsané.",
+        "criterion-3": "Odložená část má konkrétní další krok a nezmizela z rozsahu."
+      }
+    },
+    {
+      "id": "relationships",
+      "title": "Hluboké zpracování vztahů",
+      "sections": [
+        "6"
+      ],
+      "prerequisites": [
+        "priming"
+      ],
+      "purpose": "Vytvářet a ověřovat významové vazby mezi poznatky.",
+      "practice_task": "Porovnej dva pojmy nebo postupy, vysvětli jejich vazbu a ověř ji vlastním příkladem.",
+      "rubric": {
+        "criterion-1": "Vztah má konkrétní význam, podmínku nebo příčinu.",
+        "criterion-2": "Srovnání vysvětluje důležitý rozdíl či společný princip.",
+        "criterion-3": "Příklad skutečně ověřuje tvrzení a zachovává jeho podmínky."
+      }
+    },
+    {
+      "id": "analogy",
+      "title": "Analogie a její hranice",
+      "sections": [
+        "6.5"
+      ],
+      "prerequisites": [
+        "relationships"
+      ],
+      "purpose": "Použít analogii a rozpoznat, kde přestává platit.",
+      "practice_task": "Vytvoř analogii k aktuálnímu pojmu, přiřaď její části a ukaž jeden případ selhání.",
+      "rubric": {
+        "criterion-1": "Odpovídají si relevantní vztahy, ne jen názvy.",
+        "criterion-2": "Analogie objasňuje konkrétní problém.",
+        "criterion-3": "Hranice je vysvětlena správným protipříkladem nebo podmínkou."
+      }
+    },
+    {
+      "id": "notes",
+      "title": "Vztahové poznámky a GRINDE",
+      "sections": [
+        "7"
+      ],
+      "prerequisites": [
+        "relationships"
+      ],
+      "purpose": "Používat poznámky jako nástroj vlastního myšlení.",
+      "practice_task": "Vytvoř vlastní vztahové poznámky nebo mapu, vysvětli skupiny a směry vazeb a pak strukturu částečně obnov bez předlohy.",
+      "rubric": {
+        "criterion-1": "Skupiny vyjadřují skutečný význam a hlavní hierarchii.",
+        "criterion-2": "Uživatel vysvětlí vazby, včetně propojení skupin a směru.",
+        "criterion-3": "Kontrola rekonstrukcí odhalí konkrétní mezeru, ne pouze vzhled mapy."
+      }
+    },
+    {
+      "id": "pacer",
+      "title": "Čtení a volba zpracování PACER",
+      "sections": [
+        "8"
+      ],
+      "prerequisites": [
+        "priming"
+      ],
+      "purpose": "Zvolit činnost odpovídající druhu informace.",
+      "practice_task": "Vyber několik rozdílných informací z aktuálního materiálu a skutečně proveď odpovídající zpracování.",
+      "rubric": {
+        "criterion-1": "Volba činnosti odpovídá účelu informace.",
+        "criterion-2": "Je proveden postup, propojení, argument nebo jiné odpovídající zpracování.",
+        "criterion-3": "Kategorie nejsou mechanické přihrádky a potřebné detaily zůstaly přesné."
+      }
+    },
+    {
+      "id": "retrieval",
+      "title": "Vlastní vybavení a zpětná vazba",
+      "sections": [
+        "9.1",
+        "9.2"
+      ],
+      "prerequisites": [
+        "goals"
+      ],
+      "purpose": "Vytvořit vlastní výstup před kontrolou řešení.",
+      "practice_task": "Bez předlohy vysvětli nebo vyřeš vybranou úlohu, pak porovnej s ověřeným kritériem a oprav konkrétní mezeru.",
+      "rubric": {
+        "criterion-1": "Vlastní pokus vznikl před řešením a zpětnou vazbou.",
+        "criterion-2": "Výzva a podněty odpovídají cílovému výkonu.",
+        "criterion-3": "Rozdíl vůči kritériu má konkrétní opravu a další ověření."
+      }
+    },
+    {
+      "id": "spacing",
+      "title": "Ověřování s odstupem",
+      "sections": [
+        "9.3",
+        "9.8"
+      ],
+      "prerequisites": [
+        "retrieval"
+      ],
+      "purpose": "Ověřit dostupnost znalosti v pozdějším vlastním výkonu.",
+      "practice_task": "Naplánuj a proveď návrat ke známému tématu bez opětovného čtení řešení před pokusem.",
+      "rubric": {
+        "criterion-1": "Je známý odstup od relevantní expozice nebo je jeho neznalost přiznaná.",
+        "criterion-2": "Návrat obsahuje aktivní použití a zaznamenané podmínky pomoci.",
+        "criterion-3": "Další termín vychází z výkonu a cíle, ne ze slepé univerzální tabulky."
+      }
+    },
+    {
+      "id": "interleaving",
+      "title": "Prokládání a volba postupu",
+      "sections": [
+        "9.4"
+      ],
+      "prerequisites": [
+        "retrieval"
+      ],
+      "purpose": "Rozpoznat vhodný postup u rozdílných úloh.",
+      "practice_task": "Vyřeš malou pestrou sadu a před každou úlohou zdůvodni volbu metody.",
+      "rubric": {
+        "criterion-1": "Sada vyžaduje skutečně různé volby, ne pouze jiná čísla.",
+        "criterion-2": "Volba postupu má zdůvodnění odpovídající zadání.",
+        "criterion-3": "Je rozlišena chyba volby od chyby provedení."
+      }
+    },
+    {
+      "id": "calibration",
+      "title": "Jistota a vnější kalibrace",
+      "sections": [
+        "9.5",
+        "9.6"
+      ],
+      "prerequisites": [
+        "retrieval"
+      ],
+      "purpose": "Srovnávat předběžnou jistotu s ověřeným výkonem.",
+      "practice_task": "Před kontrolou označ jistotu jedné odpovědi, zdůvodni ji a porovnej s ověřeným hodnocením.",
+      "rubric": {
+        "criterion-1": "Jistota byla zaznamenaná před zpětnou vazbou.",
+        "criterion-2": "Hodnocení má věcný podklad a kontrolované kritérium.",
+        "criterion-3": "Rozpor vede ke konkrétnímu dalšímu testu místo nálepky člověka."
+      }
+    },
+    {
+      "id": "memorization",
+      "title": "Memorizační filtr a kartičky",
+      "sections": [
+        "10"
+      ],
+      "prerequisites": [
+        "pacer"
+      ],
+      "purpose": "Memorovat přesný detail jen když to cíl vyžaduje.",
+      "practice_task": "Vyber nutný detail, projdi memorizační filtr a navrhni či oprav jednu kartičku nebo paměťovou pomůcku.",
+      "rubric": {
+        "criterion-1": "Je zdůvodněno, proč je nutné vybavení zpaměti.",
+        "criterion-2": "Pomůcka zachovává přesný obsah a vhodný podnět.",
+        "criterion-3": "Samostatné ověření odděluje znalost detailu od porozumění konceptu."
+      }
+    },
+    {
+      "id": "deliberate-practice",
+      "title": "Trénink dovednosti a přeučení návyku",
+      "sections": [
+        "11"
+      ],
+      "prerequisites": [
+        "reflection"
+      ],
+      "purpose": "Trénovat konkrétní chování podle fáze RAIL.",
+      "practice_task": "Popiš konkrétní chybný krok, zvol cílený drill a porovnej více vlastních provedení.",
+      "rubric": {
+        "criterion-1": "Je určeno pozorovatelné chování nebo podnět starého návyku.",
+        "criterion-2": "Drill odpovídá fázi a umožňuje rozpoznat správné provedení.",
+        "criterion-3": "Závěr o konzistenci vychází z více pokusů a rychlost nepředbíhá kvalitu."
+      }
+    },
+    {
+      "id": "reflection",
+      "title": "Reflexe a experiment",
+      "sections": [
+        "12"
+      ],
+      "prerequisites": [],
+      "purpose": "Vyhodnocovat vlastní proces a měnit jednu věc.",
+      "practice_task": "Po skutečném bloku odpověz Co, Jak, Proč a Co teď a navrhni jeden pozorovatelný experiment.",
+      "rubric": {
+        "criterion-1": "Popis skutečného průběhu je oddělen od výkladu příčiny.",
+        "criterion-2": "Změna je konkrétní a dost malá k provedení.",
+        "criterion-3": "Experiment má měřítko a připouští alternativy i neprůkazný výsledek."
+      }
+    },
+    {
+      "id": "thinking",
+      "title": "Jasné myšlení a nejistota",
+      "sections": [
+        "13"
+      ],
+      "prerequisites": [
+        "goals"
+      ],
+      "purpose": "Zviditelnit předpoklady a vybrat rozlišující ověření.",
+      "practice_task": "Rozlož aktuální problém na tvrzení, závislosti a neznámé; jednu nejistotu ověř.",
+      "rubric": {
+        "criterion-1": "Jsou zřejmé předpoklady a kritérium rozhodnutí.",
+        "criterion-2": "Nejistota je přiřazená ke konkrétní otázce či podkladu.",
+        "criterion-3": "Ověření skutečně mění nebo zpřesňuje pracovní model."
+      }
+    },
+    {
+      "id": "work-learning",
+      "title": "Učení pro práci a odbornost",
+      "sections": [
+        "14"
+      ],
+      "prerequisites": [
+        "goals"
+      ],
+      "purpose": "Rozlišit aktuální dodávku a budovanou dovednost.",
+      "practice_task": "Z pracovního nebo projektového úkolu vytvoř malé studijní zadání s cestou ke zpětné vazbě.",
+      "rubric": {
+        "criterion-1": "Aktuální výstup a dlouhodobá schopnost jsou pojmenované.",
+        "criterion-2": "Rozsah odpovídá skutečnému použití a podmínkám.",
+        "criterion-3": "Vlastní provedení má konkrétní vnější ověření."
+      }
+    },
+    {
+      "id": "planning",
+      "title": "Kapacita, priority a systém týdne",
+      "sections": [
+        "16",
+        "17"
+      ],
+      "prerequisites": [
+        "goals"
+      ],
+      "purpose": "Plánovat výsledky v reálných podmínkách.",
+      "practice_task": "Rozvrhni skutečný studijní týden s výstupy bloků, odhady a rezervou.",
+      "rubric": {
+        "criterion-1": "Celková kapacita je sdílená mezi všemi předměty.",
+        "criterion-2": "Bloky mají ověřitelné výstupy a přiznaný původ odhadů.",
+        "criterion-3": "Rezerva, obnova a rozhodnutí při konfliktu jsou výslovné."
+      }
+    },
+    {
+      "id": "resistance",
+      "title": "Odpor a proveditelný začátek",
+      "sections": [
+        "18"
+      ],
+      "prerequisites": [
+        "goals"
+      ],
+      "purpose": "Upravit podmínky konkrétního obtížného začátku.",
+      "practice_task": "Popiš jeden skutečný odklad a vyzkoušej malý začátek s připravenou reakcí na překážku.",
+      "rubric": {
+        "criterion-1": "Je popsaná konkrétní situace, ne trvalá nálepka člověka.",
+        "criterion-2": "První krok je v daných podmínkách proveditelný.",
+        "criterion-3": "Reflexe rozlišuje uskutečnění kroku a jeho skutečný účinek."
+      }
+    },
+    {
+      "id": "focus",
+      "title": "Návrat pozornosti",
+      "sections": [
+        "19"
+      ],
+      "prerequisites": [
+        "goals"
+      ],
+      "purpose": "Rozpoznat rušič a trénovat návrat k úloze.",
+      "practice_task": "Během jednoho bloku zachyť konkrétní odbočení, vyzkoušej úpravu a popiš návrat k cíli.",
+      "rubric": {
+        "criterion-1": "Pozorování popisuje skutečný rušič nebo přechod.",
+        "criterion-2": "Zásah odpovídá tomuto problému a zachovává cíl bloku.",
+        "criterion-3": "Výsledek není vydáván za přesně změřený čas soustředění bez dat."
+      }
+    },
+    {
+      "id": "recovery",
+      "title": "Energie a obnova",
+      "sections": [
+        "20"
+      ],
+      "prerequisites": [
+        "goals"
+      ],
+      "purpose": "Najít udržitelnou obnovu v reálném týdnu.",
+      "practice_task": "Porovnej vlastní zkušenost se dvěma dostupnými způsoby odpočinku a uprav jednu část týdne.",
+      "rubric": {
+        "criterion-1": "Údaje vycházejí z vlastní zkušenosti, ne z domnělé diagnózy.",
+        "criterion-2": "Je rozlišena snadná konzumace a skutečně obnovující činnost.",
+        "criterion-3": "Změna chrání další den a je kapacitně proveditelná."
+      }
+    },
+    {
+      "id": "ai-use",
+      "title": "AI při učení",
+      "sections": [
+        "21"
+      ],
+      "prerequisites": [
+        "goals"
+      ],
+      "purpose": "Zachovat činnosti, které se člověk potřebuje naučit.",
+      "practice_task": "Na skutečné úloze urči, co provedeš sám a co předáš AI; po její pomoci proveď nové samostatné ověření.",
+      "rubric": {
+        "criterion-1": "Rozdělení práce odpovídá cílové dovednosti a ceně chyby.",
+        "criterion-2": "Vlastní mentální operace nejsou pouze nahrazené hotovou odpovědí.",
+        "criterion-3": "Správnost podkladů a pozdější vlastní výkon jsou ověřeny odděleně."
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+include README.md
+include config/knowledge_pipeline.example.json
+recursive-include docs *.md *.csv *.json
+recursive-include scripts *.py *.ps1
+recursive-include tests *.py
+recursive-include src/learning_app/knowledge_pipeline/prompts *.txt
+prune data
+prune reports
+prune automation
+prune youtube
+prune .venv
+global-exclude __pycache__ *.py[cod]

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mentor semestrálního projektu PRF"
+  short_description: "Vlastní implementace PRF, testy a obhajoba projektu"
+  default_prompt: "Použij $prf-project-mentor a nauč mě samostatně navrhnout, naprogramovat a obhájit semestrální interpret PRF v Pythonu jako projekt do portfolia."
